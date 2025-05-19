@@ -7,20 +7,8 @@ NestJS 기반의 MSA 구조 출석 보상 시스템입니다.
 
 ## 🚀 실행 방법
 
-### 1. `.env` 파일 작성 (환경 변수)
+1. Docker 실행
 
-```env
-GATEWAY_PORT=3000
-AUTH_PORT=3001
-EVENT_PORT=3002
-MONGO_URI=mongodb://localhost:27017/seven-day-reward
-JWT_SECRET=supersecret
-AUTH_VERIFY_URL=http://localhost:3001/auth/verify
-EVENT_URL=http://localhost:3002
-2. Docker 실행
-bash
-복사
-편집
 docker-compose up --build
 서비스는 다음 포트에서 실행됩니다:
 
@@ -44,6 +32,7 @@ seven-day-reward/
 ├── .env
 ├── .gitignore
 ├── README.md
+
 📌 API 흐름 요약
 단계	API	설명
 1	POST /auth/register	회원가입
